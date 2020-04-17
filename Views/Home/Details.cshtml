@@ -1,0 +1,17 @@
+@model Dish
+<div class="container text-center">
+  <div class="row justify-content-center">
+<div class="card" style="width: 18rem;">
+  <img src="https://www.dw.com/image/45631828_303.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@Model.DishName</h5>
+    <h4 class="card-title">@Model.ChefName</h4>
+    <p class="card-text">@Model.Description</p>
+    <p class="card-text">@Model.Calories</p>
+    <p class="card-text">@Model.Toastiness</p>
+    <a class="btn btn-primary"asp-action="Index" asp-controller="Home" >Home</a>
+    <a class="btn btn-warning"asp-action="Edit" asp-controller="Home" asp-route-dishId='@Model.DishId'>EDIT</a>
+  </div>
+</div>
+</div>
+</div>
